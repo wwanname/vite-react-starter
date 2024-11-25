@@ -76,6 +76,11 @@ const ReactCompilerConfig = {
 
 // https://vite.dev/config/
 export default defineConfig({
+  resolve: {
+    alias: {
+      '@': '/'
+    },
+  },
   plugins: [react({
     babel: {
       plugins: [
