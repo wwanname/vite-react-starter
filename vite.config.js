@@ -2,8 +2,9 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react-swc'
 import preload from "vite-plugin-preload"
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer'
-import Font from 'vite-plugin-font';
-import tailwindcss from '@tailwindcss/vite';
+import Font from 'vite-plugin-font'
+import tailwindcss from '@tailwindcss/vite'
+import tsconfigPaths from 'vite-tsconfig-paths'
 
 const DEFAULT_OPTIONS = {
   test: /\.(jpe?g|png|gif|tiff|webp|svg|avif)$/i,
@@ -81,7 +82,7 @@ export default defineConfig({
         ["babel-plugin-react-compiler", ReactCompilerConfig]
       ]
     }
-  }), preload(), Font.vite(), tailwindcss(), ViteImageOptimizer(
+  }), preload(), Font.vite(), tailwindcss(), tsconfigPaths(), ViteImageOptimizer(
     {DEFAULT_OPTIONS}
   )],
 })
