@@ -13,4 +13,5 @@ Currently, several official plugins are available:
 - [@vite-plugin-image-optimizer](https://www.npmjs.com/package/vite-plugin-image-optimizer) for Image Optimization
 - [@vite-plugin-font](https://www.npmjs.com/package/vite-plugin-font) for Font Optimization
 - [@tailwind-merge+clsx](https://www.youtube.com/watch?v=re2JFITR7TI) for fixing TailwindCSS weakness
+- [@vite-tsconfig-paths](https://www.npmjs.com/package/vite-tsconfig-paths) for alias
 - GSAP, Framer Motion, Lenis, Locomotive Scroll will be installed by yourself
